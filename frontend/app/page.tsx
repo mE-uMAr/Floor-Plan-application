@@ -22,7 +22,7 @@ export default function FloorPlannerDashboard() {
 
     try {
       // Replace with your actual API endpoint
-      const response = await fetch("/api/generate-floor-plan", {
+      const response = await fetch("https://floor-plan-application.onrender.com/get_plan", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
