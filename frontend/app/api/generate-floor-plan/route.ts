@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Prompt is required" }, { status: 400 })
     }
 
-    const response = await fetch("YOUR_AI_API_ENDPOINT", {
+    const response = await fetch("https://floor-plan-application.onrender.com/get_plan", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
