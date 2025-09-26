@@ -23,3 +23,9 @@ def generate_floor(prompt: str):
     img.save(buffer, format="PNG")
     buffer.seek(0)
     return StreamingResponse(buffer, media_type="image/png")
+
+@app.get("/ping")
+def ping():
+    return {
+        "success" : True
+    }
